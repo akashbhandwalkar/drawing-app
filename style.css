@@ -1,0 +1,156 @@
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.square {
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.color-square {
+   cursor: pointer;
+   border: 1px solid #efefef;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: inline-block;
+}
+.active {
+     box-shadow: 1px 1px 2px gray,  -1px -1px 2px gray;
+     border: 1px solid white;
+     /* margin-top: 5px; */
+}
+.color-container {
+  background-color: white;
+  padding: 5px 0 0 0px;
+}
+
+.rules-container {
+  color: white;
+}
+
+.title {
+  color: white;
+  margin: 0 0 20px 0;
+  text-decoration: underline;
+  /* text-decoration-color: red; */
+  text-decoration-style: wavy;
+  font-size: 30px;
+}
+
+
+
+/** sidebar */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: #1a1d1f;
+  width: 60px;
+}
+
+
+.sidebar .logo{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2ab7ca;
+  color: white;
+  font-size: 16px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.horizontal-center {
+  justify-content: center;
+}
+
+.sidebar ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+ul li:hover {
+  background: #272b30;
+}
+
+ul li i {
+  color: white;
+}
+
+.fill-grid-container {
+  position: fixed;
+  left: 70px;
+  top: 40px;
+  border: 2px solid #ccc;
+}
+
+.right-sidebar {
+  position: fixed;
+  top: 40px;
+  right: 15px;
+  width: 260px;
+  height: 100vh;
+  border: 2px solid #ccc;
+}
+
+.color-spotter-container {
+  box-sizing: content-box;
+}
+
+.active-menu {
+  color: orange;
+}
+
+canvas { 
+  border: 1px solid black; 
+  cursor: crosshair;
+}
+
+canvas {
+  position: relative;
+  left: 75px;
+  top: 20px;
+  border: 1px solid #efefef;
+  /* margin-bottom: 5px; */
+}
+
+table {
+  width: 100%;
+}
+
+#canvasImg {
+  width: 75%;
+  height: 75%;
+}

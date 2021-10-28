@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> </link>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="sidebar flex horizontal-center">
+    <div>
+      <ul>
+        <li> <i class="menu-item fa fa-pencil"></i> </li>
+        <li> <i class="menu-item fa fa-eraser"></i> </li>
+        <li id="clear-drawing"> <i class="menu-item fa fa-refresh"></i> </li>
+        <li> <i class="menu-item fa fa-th"></i> </li>
+        <li> <i class="menu-item fa fa-undo"></i> </li>
+        <li> <i class="menu-item fa fa-repeat"></i> </li>
+        <li id="save-drawing"> <i class="menu-item fa fa-save"></i> </li>
+        <li id="back-to-drawing"> <i class="menu-item fa fa-backward"></i> </li>
+        <input id="color-input" type="color" value="#930FFF">
+
+      </ul>
+    </div>
+  </div>
+  <canvas id="drawing-app"></canvas>
+  <script src="./app.js" type="text/javascript"></script>  
+</body>
+</html>
